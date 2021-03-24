@@ -1,16 +1,14 @@
-let nome = "Islene";
-let birthCity = "Araguari";
-const birthYear = 1983;
+let a = 10;
+let b = 20;
 
-console.log(nome);
-console.log(birthCity);
-console.log(birthYear);
+let soma = a + b;
+let subtracao = a - b;
+let multiplicacao = a * b;
+let divisao = a / b;
+let modulo = a % b;
 
-birthYear = 2020;
-console.log(birthYear);
-
-birthCity = "Araguari/MG";
-console.log(birthCity);
-
-/*Você saberia explicar por que recebemos uma mensagem de erro?*/
-/*Recebemos uma mensagem de erro pq birthYear é uma const e não pode ser atribuído outro valor a ela*/
+console.log("Soma: ", soma);
+console.log("Subtração: ", subtracao);
+console.log("Multiplicação: ", multiplicacao);
+console.log("Divisão: ", divisao);
+console.log("Módulo: ", modulo);
