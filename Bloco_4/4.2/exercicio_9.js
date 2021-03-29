@@ -7,5 +7,5 @@ for (i = 1; i <= 25 ; i += 1){
     div = metade.push(i/2);
 }    
 console.log(array);
-console.log("*****************");
+console.log("******************");
 console.log(metade);
