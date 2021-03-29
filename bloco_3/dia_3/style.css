@@ -1,0 +1,26 @@
+.Mario img {
+    display: block;
+    width: 200px;
+    padding-top: 10px;
+   }
+
+  .Gomba img{
+    width: 200px;
+    padding-top: 10px;
+  }
+
+  .Bowser img{
+    width: 200px;
+    padding-top: 10px;
+  }
+  div.baloon {
+      float:left;
+      
+   }
+  div.text p{
+    position: absolute;
+    padding: 35px 15px;
+  }
+  #Bowser{
+    padding: 30px 2px;
+  }
