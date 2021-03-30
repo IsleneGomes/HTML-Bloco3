@@ -33,20 +33,13 @@ for(let i = 0 ;i < altura; i+= 1) {
 //Fazer depois, não dei conta
 
 let number = 548;
-let array = [];
-let guarda = 0;
 
-for (let i = 0; i < number ; i+= 1){
  if (number === 2 || number === 3 || number === 5 || number === 7){
-   array.push(number);
-   console.log('Esse número é primo')
+   console.log('Esse número é primo');
     if (number%2 === 0 || number%3 === 0 ||number%5 === 0 || number%7 === 0) {
-  array.push(number);  
-  console.log('Esse número não é primo')
+   console.log('Esse número não é primo');
     }
  } else {
-  array.push(number);
-  console.log('Esse número é primo');
+   console.log('Esse número é primo');
     }
- }
-console.log (guarda);
+ 
