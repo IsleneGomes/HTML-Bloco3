@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+  
+  <div id="pai">
+  
+    <div id="primeiroFilho"></div>
+    
+    <div id="elementoOndeVoceEsta">
+    
+      <div id="primeiroFilhoDoFilho"></div>
+      
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+      
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    
+    <div id="quartoEUltimoFilho"></div>
+    
+  </div>
+</div>
+<script>
+let pai = document.getElementById('elementoOndeVoceEsta').parentNode;
+  console.log(pai);
+  console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+  console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+ let proximo = document.getElementById('elementoOndeVoceEsta').nextSibling;
+ console.log(proximo.nextSibling);
+
+let elementoPai = document.querySelector('#pai');
+    elementoPai.style.backgroundColor = "red";
+    console.log(elementoPai.firstElementChild);
+    let ultimo = elementoPai.lastElementChild;
+    console.log(ultimo.previousElementSibling);
+
+let primeiro = document.querySelector('#primeiroFilho');
+    primeiro.innerText = "Este foi o primeiro filho desse pai";
+
+
+</script>
+</body>
+</html>
