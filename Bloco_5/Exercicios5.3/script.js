@@ -24,7 +24,7 @@ let idDays = document.getElementById('days');
       criaLi.innerHTML = dia;
       idDays.appendChild(criaLi);
     } 
-    else if (dia === 4 || dia === 11|| dia === 18 || dia === 25) {
+    else if (dia === 4 || dia === 11|| dia === 18) {
       criaLi.className = 'day friday';
       criaLi.innerHTML = dia;
       idDays.appendChild(criaLi);
@@ -58,5 +58,23 @@ let botao = document.createElement('button');
 }
 criaBotao('Feriados');
 
+/*Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)"*/
 
+function colorButton(event) {
+  let botao = document.querySelector('#btn-holiday');
+  let hollidays = document.querySelectorAll('.holiday')
+  let backgroundColor = 'rgb(218, 38, 138)';
+  let setNewColor = 'yellowgreen';
 
+  botao.addEventListener('click', function() {
+    for (let index = 0; index < hollidays.length; index += 1) {
+      if (hollidays[index].style.backgroundColor === setNewColor) {
+        hollidays[index].style.backgroundColor = backgroundColor;
+      } else {
+        hollidays[index].style.backgroundColor = setNewColor;
+      }
+    }
+  });
+}
+colorButton();
