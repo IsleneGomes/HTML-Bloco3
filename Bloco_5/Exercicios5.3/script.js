@@ -78,3 +78,17 @@ function colorButton(event) {
   });
 }
 colorButton();
+
+/*Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+Adicione a este botão o ID "btn-friday" .
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container"*/
+
+function criaBotaoFriday(nomeBotao) {
+let buttonsContainer = document.querySelector('.buttons-container');
+let botaoFriday = document.createElement('button');
+  let botaoFridayId = 'btn-friday';
+  botaoFriday.innerHTML = nomeBotao;
+  botaoFriday.id = botaoId;
+  buttonsContainer.appendChild(botaoFriday);
+}
+criaBotao('Sexta-Feira');
