@@ -18,17 +18,26 @@ let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 let idDays = document.getElementById('days');
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let dia = dezDaysList[index];
-    
-    if (dia === 24 || dia === 25 || dia === 31) {
-      
-      idDays.appendChild(document.createElement('li')).className = 'day holiday';
+    let criaLi = document.createElement('li');
+    if (dia === 24 || dia === 31) {
+      criaLi.className = 'day holiday';
+      criaLi.innerHTML = dia;
+      idDays.appendChild(criaLi);
     } 
     else if (dia === 4 || dia === 11|| dia === 18 || dia === 25) {
-      
-      idDays.appendChild(document.createElement('li')).className = 'day friday';
+      criaLi.className = 'day friday';
+      criaLi.innerHTML = dia;
+      idDays.appendChild(criaLi);
+    } 
+    else if (dia === 25) {
+      criaLi.className = 'day holiday friday';
+      criaLi.innerHTML = dia;
+      idDays.appendChild(criaLi);
     } 
     else {
-      idDays.appendChild(document.createElement('li')).className = 'day';
+      criaLi.className = 'day';
+      criaLi.innerHTML = dia;
+      idDays.appendChild(criaLi);
     }
   }
 }
