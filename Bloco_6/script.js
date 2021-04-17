@@ -11,3 +11,19 @@ function estadosBras() {
 }
 estadosBras();
 
+function cpf(){
+const cpf = document.getElementById('cpf');
+let valor = cpf.value;
+  while(valor === Number) {
+    if (valor === 11) {
+      return cpf()
+    } else {
+      return 'Insira apenas números.'
+    }
+  }
+}
+cpf();
+
+function preventDefault(element) {
+  element.preventDefault();
+}
