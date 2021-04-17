@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form method="GET">
+    <fieldset>
+      <h1>Formulário</h1>
+      <div>
+        <label for="nome">Digite seu Nome: 
+          <input type="text" value="" id = 'nome' checked>
+        </label>
+      </div>
+      
+      <div>
+        <label for="email">Digite seu E-Mail: 
+          <input type="text" value="" id = 'email'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="cpf">CPF: 
+          <input type="number" value="" id = 'cpf'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="endereco">Endereço: 
+          <input type="text" value="" id = 'endereco'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="cidade">Cidade: 
+          <input type="text" value="" id = 'cidade'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="estado">UF: 
+          <select type="combobox" id ="estado"></select>
+        </label>
+      </div>
+      
+      <div>
+        <label for="morada">Tipo: 
+          <input type="radio" name="morada" id="tipocasa" required>Casa
+          <input type="radio" name="morada" id="tipoapt" required>Apartamento
+        </label>
+      </div>
+    
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
