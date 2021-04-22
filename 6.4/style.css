@@ -16,14 +16,16 @@ body {
 
 .logo-container {
   display: flex;
+  flex-basis: 268px;
   justify-content: center;
-  width: 268px;
-  order: -1;
 }
 
 .menu-container {
   display: flex;
-  width: 500px;
+  align-items: center;
+  flex-basis: 500px;
+  flex-grow: 1;
+  order: 1;
 }
 
 .menu-container ul {
