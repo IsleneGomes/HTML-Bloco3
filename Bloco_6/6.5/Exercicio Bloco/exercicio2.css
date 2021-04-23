@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0 30px;
+  font-size: 25px;
+}
+
+header{
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: rgb(134, 44, 44);
+  color: blanchedalmond;
+}
+
+h2, h1, h3 {
+ background-color: rgb(134, 44, 44);
+}
+
+.aside-one {
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: .7em;
+  text-align: justify;
+  background-color: blanchedalmond;
+}
+
+.aside-two {
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: .7em;
+  text-align: justify;
+  background-color: blanchedalmond;
+}
+
+.main-content {
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: .8em;
+  text-align: justify;
+  background-color: blanchedalmond;
+}
+.main-content h1 {
+  font-size: 1.1em;
+  
+}
+
+footer {
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: .5em;
+  text-align: justify;
+  background-color: blanchedalmond;
+}
+
+header li{
+ display: inline;
+ font-size: .7em;
+ text-align: justify;
+ flex-basis: 100%;
+ padding-right: 35px;
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    font-size: 30px;
+  }
+}
