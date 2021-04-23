@@ -23,6 +23,7 @@ header{
 
 h2, h1, h3 {
  background-color: rgb(134, 44, 44);
+ text-align: center;
 }
 
 .aside-one {
@@ -50,7 +51,6 @@ h2, h1, h3 {
 }
 .main-content h1 {
   font-size: 1.1em;
-  
 }
 
 footer {
@@ -69,8 +69,25 @@ header li{
  padding-right: 35px;
 }
 
-@media screen and (min-width: 680px) {
-  .container {
-    font-size: 30px;
+@media screen and (min-width: 620px)and (max-width: 1000px) {
+  body {
+    font-size: 150%;
   }
+  header li{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+     font-size: 170%;
+  }
+   header li{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+}
 }
