@@ -41,16 +41,18 @@ const telefone = order.phoneNumber;
 const endereco = order.address.street;
 const numeroend = order.address.number;
 const apt = order.address.apartment;
-
-  console.log(`Olá ${nome}, entrega para ${entrega}, telefone ${telefone}, ${endereco}, Nº: ${numeroend}, APT: ${apt}`)
-
+console.log(`Olá ${nome}, entrega para ${entrega}, telefone ${telefone}, ${endereco}, Nº: ${numeroend}, APT: ${apt}`)
 }
 
 customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+const nome = order.order.delivery.deliveryPerson = 'Luiz Silva';
+const pedido1 = Object.keys(order.order.pizza);
+const bebida = order.order.drinks.coke.type;
+const valor = order.payment.total = '50';
 
+console.log(`Olá ${nome}, o total do seu pedido de ${pedido1} e ${bebida} é ${valor}.`)
 }
 
 orderModifier(order);
