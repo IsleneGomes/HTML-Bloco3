@@ -66,7 +66,8 @@ const books = [
 const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-  // escreva seu código aqui
+  const nomes = books.filter(book => (book.author.name).includes('.'));
+  return  nomes;
 }
-
+console.table(authorWith3DotsOnName())
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
