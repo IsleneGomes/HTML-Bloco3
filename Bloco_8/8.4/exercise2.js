@@ -65,7 +65,12 @@ const books = [
 ];
 
 function allNames() {
-  const nomes = books.reduce(((acc, nome, {atual = ' '}) => acc = nome.author.name +  ', ' + acc),'');
+  const nomes = books.reduce(((acc, nome, index, {atual = ' '}) => {
+    if (index === 0) {
+    return  acc + nome.author.name;
+    }
+    return acc + ', ' + nome.author.name;
+  }),'');
   return `Nomes: ${nomes}.`; 
 }
 console.log(allNames())
