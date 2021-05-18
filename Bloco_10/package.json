@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "name": "bloco_10",
   "version": "1.0.0",
