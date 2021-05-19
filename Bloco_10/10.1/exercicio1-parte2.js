@@ -48,5 +48,4 @@ const hydrate = (string) => {
   }
   return hydrate;
 }
-
-module.exports = { encode, decode, techList, hydrate }
+module.exports = { encode, decode, techList, hydrate };
